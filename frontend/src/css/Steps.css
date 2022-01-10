@@ -1,0 +1,37 @@
+.step {
+  /* display: flex; */
+  /* flex-direction: column; */
+  width: 611px;
+  height: 50px;
+  margin: 4px;
+  border-radius: 8px;
+  background: #dedede;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.step-header {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto 5px auto;
+  align-items: center;
+  border-radius: 8px;
+  font-weight: bold;
+  background-image: linear-gradient(#fdc404, #eda621);
+  color: #fff;
+}
+
+.step-title {
+  margin: auto 17px;
+  text-shadow: 0.5px 0.5px 0.5px #000;
+}
+
+.step-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[expand="true"] {
+  height: 237px !important;
+}

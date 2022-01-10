@@ -1,0 +1,25 @@
+{
+  "name": "fv-dev-test-backend",
+  "description": "This is mine Test for job role at Finer Vision",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ciuffetelli/FV-Dev-Test.git"
+  },
+  "author": "Daniel Ciuffetelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ciuffetelli/FV-Dev-Test/issues"
+  },
+  "homepage": "https://github.com/ciuffetelli/FV-Dev-Test#readme"
+}

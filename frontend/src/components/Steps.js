@@ -2,7 +2,7 @@ import '../css/Steps.css'
 
 function Steps (props) {
 
-    const expand = props.expand || false
+    const expanded = props.expanded
 
     const headerAction = () => {
         if(typeof props.headerAction === 'function') {
@@ -11,7 +11,7 @@ function Steps (props) {
     }
 
     return (
-        <div className='step' expand={expand + ''}>
+        <div className='step' expanded={expanded + ''}>
             <div className="step-header" onClick={() => {headerAction()}}>
                 <span className="step-title">{props.title}</span>
             </div>
@@ -20,6 +20,12 @@ function Steps (props) {
             </div>
         </div>
     )
+}
+
+Steps.defaultProps = {
+    title: '',
+    expanded : false,
+    headerAction: ''
 }
 
 export default Steps

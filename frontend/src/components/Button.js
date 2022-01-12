@@ -11,9 +11,16 @@ function Button (props) {
     return (
         <div className="form-button">
             {props.disabled}
-            <button name={props.name ?? 'button'} disabled={props.disabled === true ? 'disabled' : undefined}  onClick={() => {buttonAction()}}>{props.value ?? 'Button'}</button>
+            <button name={props.name} disabled={props.disabled === true ? 'disabled' : undefined}  onClick={buttonAction}>{props.value}</button>
         </div>
     )
+}
+
+Button.defaultProps = {
+    name: 'Button',
+    value: 'Button',
+    disabled: false,
+    buttonAction: ''
 }
 
 export default Button

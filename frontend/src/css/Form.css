@@ -1,16 +1,39 @@
 .form-input {
   display: flex;
   flex-direction: column;
-  width: 185px;
   margin: 10px 12px 0px 10px;
 }
-.form-input label {
+.form-label {
   font-weight: bold;
 }
 .form-input input {
-  width: 100%;
+  width: 185px;
   height: 35px;
   margin-top: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  box-shadow: inset 1px 1px 5px #979191;
+  outline: none;
+}
+
+.form-input select {
+  width: 185px;
+  height: 35px;
+  margin-top: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  box-shadow: inset 1px 1px 5px #979191;
+  outline: none;
+}
+
+.form-input textarea {
+  width: 345px;
+  height: 142px;
+  margin: 10px 0px -39px 0px;
   padding: 5px;
   box-sizing: border-box;
   border: none;
@@ -41,4 +64,21 @@
   background: #595ea894 !important;
   cursor: default;
   transition: 0.5s;
+}
+
+.form-date {
+  display: flex;
+  width: 185px;
+}
+
+.form-date input {
+  width: 40px;
+  height: 35px;
+  margin: 10px 5px 0px -3px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  box-shadow: inset 1px 1px 5px #979191;
+  outline: none;
 }

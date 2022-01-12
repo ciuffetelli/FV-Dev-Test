@@ -3,13 +3,16 @@
   "description": "This is mine Test for job role at Finer Vision",
   "version": "1.0.0",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "sqlite3": "^5.0.2",
+    "striptags": "^3.2.0"
   },
   "devDependencies": {
+    "cors": "^2.8.5",
     "nodemon": "^2.0.15"
   },
   "scripts": {
-    "dev": "nodemon src/index.js",
+    "start": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -32,6 +32,6 @@
   flex-wrap: wrap;
 }
 
-[expand="true"] {
+[expanded="true"] {
   height: 237px !important;
 }
